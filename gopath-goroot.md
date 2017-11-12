@@ -1,4 +1,16 @@
+### Adding GOPATH to Ubuntu
+```sh
+vim /home/smvm/.bashrc 
+export GOPATH="/home/smvm/Data/Codes/GO/GOpack"
+```
 
+### Check GOPATH Added
+```sh
+go env GOPATH
+```
+
+### Important Notes
+```
 Leave GOROOT alone. 
 It should either be unset, or set to the installation folder.
 
@@ -20,3 +32,4 @@ GOPATH to a path that you own. I suggest export GOPATH=$HOME,
 although this is highly subject to personal taste.
 
 Please read http://golang.org/doc/code.html for more information.
+```
