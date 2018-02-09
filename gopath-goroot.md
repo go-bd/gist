@@ -1,3 +1,10 @@
+### [Adding GOROOT to Ubuntu](https://golang.org/doc/install)
+* Open ``` sudo vim $HOME/.profile ``` File and Add Following Two Lines
+```sh
+export GOROOT=/opt/go
+export PATH=$PATH:$GOROOT/bin
+```
+
 ### Adding GOPATH to Ubuntu
 ```sh
 vim /home/smvm/.bashrc 
