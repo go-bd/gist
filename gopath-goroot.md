@@ -1,14 +1,12 @@
-### [Adding GOROOT to Ubuntu](https://golang.org/doc/install)
-* Open ``` sudo vim $HOME/.profile ``` File and Add Following Two Lines
+### [GOROOT to Ubuntu](https://golang.org/doc/install)
+### [GOPATH GOBIN to Ubuntu](https://github.com/golang/go/wiki/SettingGOPATH)
+
+* Open ``` sudo vim $HOME/.profile ``` File and Add Following Four Lines
 ```sh
 export GOROOT=/opt/go
 export PATH=$PATH:$GOROOT/bin
-```
-
-### Adding GOPATH to Ubuntu
-```sh
-vim /home/smvm/.bashrc 
-export GOPATH="/home/smvm/Data/Codes/GO/GOpack"
+export GOPATH=$HOME/data/code/golang
+export GOBIN=$HOME/data/code/golang/bin
 ```
 
 ### Check GOPATH Added
