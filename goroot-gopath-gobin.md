@@ -5,8 +5,8 @@
 ```sh
 export GOROOT=/opt/go
 export PATH=$PATH:$GOROOT/bin
-export GOPATH=$HOME/data/code/golang
-export GOBIN=$HOME/data/code/golang/bin
+export GOPATH=$HOME/app/golang
+export GOBIN=$HOME/app/golang/bin
 ```
 
 ### Check GOPATH Added
