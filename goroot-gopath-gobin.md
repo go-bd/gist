@@ -1,18 +1,34 @@
 ### [GOROOT to Ubuntu](https://golang.org/doc/install)
 ### [GOPATH GOBIN to Ubuntu](https://github.com/golang/go/wiki/SettingGOPATH)
 
-* Open ``` sudo vim $HOME/.profile ``` File and Add Following Four Lines
+* Open ``` sudo vim $HOME/.bash_alises ``` File and Add Following Four Lines
 ```sh
-export GOROOT=/opt/go
+export GOROOT=/opt/golang
 export PATH=$PATH:$GOROOT/bin
-export GOPATH=$HOME/app/golang
-export GOBIN=$HOME/app/golang/bin
+export GOPATH=$HOME/app/go
+export GOBIN=$HOME/app/go/bin
 ```
 
 ### Check GOPATH Added
 ```sh
 go env GOPATH
 ```
+
+### Build, Run, Install
+* app.go
+```sh
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Printf("Hello, World\n")
+}
+```
+* Build `go build`
+* Run `./appdemo`
+* Install `go install`
+* This will move `appdemo` to `go/bin`
 
 ### Important Notes
 ```
